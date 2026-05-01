@@ -1,61 +1,88 @@
-# Brand Ads — AI Prompt Workflow
+# Cinematic Prompt Framework
 
-## Philosophy
+## The Core Principle
 
-Brand advertising requires a different prompt discipline than cinematic narrative. The goal is not story — it's **aspiration in a single frame or short sequence.** The viewer needs to feel something about a product or lifestyle in under 3 seconds.
+**Prompt like a cinematographer, not like a consumer.**
 
-The biggest mistake in AI brand content: prompting the product instead of prompting the feeling.
-
----
-
-## Athletic Wear — Core Prompt Framework
-
-### The Formula
-
-```
-[Lighting setup] + [lens choice] + [athlete description] + [movement quality] + [environment] + [emotional tone] + [color palette] + [sound design note]
-```
-
-### Example: Outdoor Athletic Wear
-
-```
-Golden hour side lighting, Panavision primo 50mm, female athlete mid-stride on coastal trail, 
-motion blur on legs suggesting speed, sharp face expressing focused determination, 
-Pacific coastline background soft bokeh, warm amber and deep teal color palette, 
-cinematic 2.39:1 anamorphic crop, diegetic sound of breath and footfall, 
-non-diegetic driving orchestral undercurrent
-```
-
-### Example: Studio Athletic Wear — Editorial Fashion
-
-```
-High-key white studio, large softbox overhead, Panavision primo 35mm, 
-male athlete static hero pose, muscle definition emphasized by raking side fill light, 
-minimalist white background, product colors as only color in frame, 
-magazine editorial composition, 16:9 crop for social, 
-clean diegetic silence — no ambient, product speaks
-```
+The difference between AI content that looks professional and AI content that looks fake is almost always traceable to the prompt. Consumer prompts describe what they want to see. Cinematographer prompts describe how it was shot.
 
 ---
 
-## Key Principles for Brand AI Content
+## Panavision Primer
 
-**1. Prompt the aspiration, not the product**
-Wrong: "Show a person wearing a blue jacket"
-Right: "A figure at the summit of a mountain at first light, jacket catching the wind, the entire valley below them — they earned this"
+Panavision primes are the gold standard of Hollywood cinema lenses. Specifying them in a prompt signals to the model the rendering quality, bokeh character, and optical personality you're targeting.
 
-**2. Sound design is not optional**
-Even in a 5-second brand clip, the presence or absence of diegetic ambient sound determines whether it feels real or fake. Always specify.
+### Lens Choices and Their Visual Personality
 
-**3. Quality bar**
-Every asset goes through the full audit pipeline before delivery. Brand content that looks like AI is brand content that fails. The goal is always: indistinguishable from a $500K production shoot.
+| Lens | Character | Best For |
+|------|-----------|----------|
+| Panavision Primo 21mm | Wide, environmental, slight distortion at edges | Establishing shots, landscapes, scale |
+| Panavision Primo 35mm | Natural human perspective, slightly wide | Two-shots, environmental portraits |
+| Panavision Primo 50mm | Closest to human eye, neutral | Hero shots, product, editorial |
+| Panavision Primo 75mm | Light compression, flattering | Close portraits, intimate scenes |
+| Panavision Primo 150mm | Heavy compression, isolated subject | Hero isolation, telephoto drama |
+| Panavision Anamorphic | Horizontal lens flares, oval bokeh, 2.39:1 | Epic cinematic, sci-fi, period drama |
 
 ---
 
-## Audit Checklist for Brand Assets
+## Lighting Packages
 
-- [ ] Does this feel aspirational or just descriptive?
-- [ ] Is the product/lifestyle the hero or a prop?
-- [ ] Would this pass as a frame from a real campaign?
-- [ ] Does the sound design match the visual tone?
-- [ ] Has this been through hostile audit in a separate model?
+### Natural Light
+```
+Golden hour backlight, warm 5600K ambient fill, long shadows, 
+atmospheric haze in background, motivated by sun position
+```
+
+### Three-Point Studio
+```
+Key light camera left 45 degrees, soft fill right at half intensity, 
+hair light from above rear creating separation from background, 
+clean shadow on far cheek
+```
+
+### Noir / Dramatic
+```
+Single hard source motivated by practical window, deep shadows, 
+high contrast ratio 8:1, rim light only on edges, 
+background falls to black
+```
+
+### Overcast / Diffused
+```
+Soft wraparound light, minimal shadows, even skin tone rendering, 
+slight cool bias 6500K, fashion editorial quality
+```
+
+---
+
+## Sound Design in Visual Prompts
+
+Sound is the most overlooked element in AI content — and the most defining factor in whether something feels professional or amateur.
+
+### Diegetic Sound (exists within the scene world)
+Always specify what sounds would naturally exist in the environment:
+- Urban exterior: traffic, wind, distant voices
+- Nature: wind, water, bird calls, footsteps on ground material
+- Interior: room tone, HVAC hum, material textures
+
+### Non-Diegetic Sound (score, music, narration)
+Specify the emotional register of the music layer:
+- Driving orchestral — action, movement, urgency
+- Sparse piano — intimacy, reflection, melancholy  
+- Electronic pulse — technology, future, tension
+- Silence — product hero shots, high fashion, luxury
+
+---
+
+## Full Example: Cinematic Brand Narrative
+
+```
+Panavision Anamorphic 40mm, female lead mid-30s walking through 
+early morning Tokyo street market, golden hour side light cutting 
+through steam from food stalls, warm amber and cool blue contrast, 
+shallow depth of field with foreground bokeh elements, 
+2.39:1 crop with anamorphic horizontal lens flare catching lens at frame edge,
+diegetic: market ambient, footsteps on wet stone, distant vendor calls,
+non-diegetic: sparse melancholic piano motif,
+mood: solitary beauty, quiet determination, the city as backdrop not subject
+```
