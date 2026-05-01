@@ -1,50 +1,48 @@
-# Rolf Burton Kvalvik — AI Creative Producer
+# Prompt Frameworks — Overview
 
-**Brand Ads · Cinematic Content · Generative Media Workflows**
+These are my core replicable prompt systems for generating professional-grade AI video and image content using Sora 2 and ChatGPT Pro.
 
-📍 Honolulu, HI (Remote Available)
-📧 rolfburton@gmail.com
-📝 [Waves and Positions — Substack](https://wavesandpositions.substack.com)
-🐦 [X / Twitter](https://x.com/waves4p)
+The philosophy behind all of them: **prompt like a cinematographer, not like a consumer.**
 
----
-
-## Who I Am
-
-I'm an instinctive creative who generates entirely original concepts — not remakes, not iterations, but ideas no one has seen before. I see connections between disciplines instantly and translate them into innovative visual output.
-
-I bring 20+ years of major film and television production experience — **LOST, Jurassic World, Pirates of the Caribbean, Indiana Jones 4, Godzilla** — to AI-native creative workflows. On those sets I developed a production-quality eye for cinematography, lighting, sound, and visual storytelling that now informs every prompt I build.
-
-I produced approximately **3,000 AI-generated videos using Sora 2** over two months — spanning brand advertisements (athletic wear, editorial fashion), cinematic narrative, and social content — with documented prompt frameworks built for scale.
+Most AI-generated content looks amateur because the prompts are written by people who have never been on a real set. These frameworks are grounded in 20+ years of professional film production experience and translate real cinematography language into AI outputs that look genuinely professional.
 
 ---
 
-## What's In This Repository
+## The Core System
 
-| Folder | Contents |
-|--------|----------|
-| [`/prompt-frameworks`](./prompt-frameworks) | My core replicable prompt systems |
-| [`/brand-ads`](./brand-ads) | Prompt workflows for AI-generated advertising content |
-| [`/cinematic`](./cinematic) | Film-technical prompt approach using Panavision and lighting packages |
-| [`/audit-pipeline`](./audit-pipeline) | My multi-model quality control workflow |
+Every prompt I build goes through this pipeline:
 
----
+1. **Draft** — initial concept prompt written from creative brief
+2. **Pre-audit** — review against cinematography checklist (see below)
+3. **Revisions** — refine lens, lighting, composition, sound design language
+4. **Deep-thinking pro model run** — process through ChatGPT Pro or Claude with extended thinking
+5. **Output audit** — quick quality review of produced asset
+6. **Hostile audit** — run output through a completely separate model for independent quality assessment
+7. **Final delivery** — only assets that pass both audits move forward
 
-## Core Skills
-
-- Prompt engineering: image, video & audio models
-- Cinematic visual direction & shot composition
-- AI content workflow design (concept to publish)
-- Rapid prototyping & high-volume iteration
-- Diegetic and non-diegetic sound design for AI video
-- Social distribution: TikTok, X, LinkedIn, Substack
-- Adobe Premiere Pro & video editing pipelines
-- Tools: Sora 2, ChatGPT Pro, Claude, ElevenLabs
+This dual-model hostile audit pipeline is what separates professional-grade AI output from the noise.
 
 ---
 
-## The Chronicles of Dr. Zammsy
+## Cinematography Checklist
 
-Co-creator of an original Victorian sci-fi fantasy IP franchise with **Rick McCallum** (Producer: Star Wars Episodes I–III) attached and **Matt Gaser** (Star Wars: The Clone Wars, World of Warcraft) as lead visual developer. NFT collection sold out 2021 ($400K). Puzzle game ($500K). Full film, games, and merchandise pipeline in development.
+Before any prompt is finalized, I check for:
 
-[Learn more →](https://wavesandpositions.substack.com)
+- [ ] **Lens specified** — Panavision primes, anamorphic vs spherical, focal length
+- [ ] **Lighting package** — natural, three-point, motivated source, time of day
+- [ ] **Camera movement** — static, dolly, handheld, crane, rack focus
+- [ ] **Aspect ratio** — 2.39:1 anamorphic, 1.85:1, 16:9 for social
+- [ ] **Color temperature** — warm/cool bias, golden hour, tungsten interior
+- [ ] **Diegetic sound** — ambient environment sound present in scene
+- [ ] **Non-diegetic sound** — score/music layer consideration
+- [ ] **Subject framing** — rule of thirds, headroom, lead room
+- [ ] **Background depth** — foreground element, mid-ground subject, background context
+- [ ] **Tonal intent** — what emotion should this frame produce in the viewer
+
+---
+
+## See Also
+
+- [`/brand-ads`](../brand-ads/README.md) — Athletic wear and editorial fashion ad workflows
+- [`/cinematic`](../cinematic/README.md) — Film-technical cinematic prompt approach
+- [`/audit-pipeline`](../audit-pipeline/README.md) — Full multi-model audit documentation
