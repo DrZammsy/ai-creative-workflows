@@ -1,48 +1,61 @@
-# Prompt Frameworks — Overview
+# Brand Ads — AI Prompt Workflow
 
-These are my core replicable prompt systems for generating professional-grade AI video and image content using Sora 2 and ChatGPT Pro.
+## Philosophy
 
-The philosophy behind all of them: **prompt like a cinematographer, not like a consumer.**
+Brand advertising requires a different prompt discipline than cinematic narrative. The goal is not story — it's **aspiration in a single frame or short sequence.** The viewer needs to feel something about a product or lifestyle in under 3 seconds.
 
-Most AI-generated content looks amateur because the prompts are written by people who have never been on a real set. These frameworks are grounded in 20+ years of professional film production experience and translate real cinematography language into AI outputs that look genuinely professional.
-
----
-
-## The Core System
-
-Every prompt I build goes through this pipeline:
-
-1. **Draft** — initial concept prompt written from creative brief
-2. **Pre-audit** — review against cinematography checklist (see below)
-3. **Revisions** — refine lens, lighting, composition, sound design language
-4. **Deep-thinking pro model run** — process through ChatGPT Pro or Claude with extended thinking
-5. **Output audit** — quick quality review of produced asset
-6. **Hostile audit** — run output through a completely separate model for independent quality assessment
-7. **Final delivery** — only assets that pass both audits move forward
-
-This dual-model hostile audit pipeline is what separates professional-grade AI output from the noise.
+The biggest mistake in AI brand content: prompting the product instead of prompting the feeling.
 
 ---
 
-## Cinematography Checklist
+## Athletic Wear — Core Prompt Framework
 
-Before any prompt is finalized, I check for:
+### The Formula
 
-- [ ] **Lens specified** — Panavision primes, anamorphic vs spherical, focal length
-- [ ] **Lighting package** — natural, three-point, motivated source, time of day
-- [ ] **Camera movement** — static, dolly, handheld, crane, rack focus
-- [ ] **Aspect ratio** — 2.39:1 anamorphic, 1.85:1, 16:9 for social
-- [ ] **Color temperature** — warm/cool bias, golden hour, tungsten interior
-- [ ] **Diegetic sound** — ambient environment sound present in scene
-- [ ] **Non-diegetic sound** — score/music layer consideration
-- [ ] **Subject framing** — rule of thirds, headroom, lead room
-- [ ] **Background depth** — foreground element, mid-ground subject, background context
-- [ ] **Tonal intent** — what emotion should this frame produce in the viewer
+```
+[Lighting setup] + [lens choice] + [athlete description] + [movement quality] + [environment] + [emotional tone] + [color palette] + [sound design note]
+```
+
+### Example: Outdoor Athletic Wear
+
+```
+Golden hour side lighting, Panavision primo 50mm, female athlete mid-stride on coastal trail, 
+motion blur on legs suggesting speed, sharp face expressing focused determination, 
+Pacific coastline background soft bokeh, warm amber and deep teal color palette, 
+cinematic 2.39:1 anamorphic crop, diegetic sound of breath and footfall, 
+non-diegetic driving orchestral undercurrent
+```
+
+### Example: Studio Athletic Wear — Editorial Fashion
+
+```
+High-key white studio, large softbox overhead, Panavision primo 35mm, 
+male athlete static hero pose, muscle definition emphasized by raking side fill light, 
+minimalist white background, product colors as only color in frame, 
+magazine editorial composition, 16:9 crop for social, 
+clean diegetic silence — no ambient, product speaks
+```
 
 ---
 
-## See Also
+## Key Principles for Brand AI Content
 
-- [`/brand-ads`](../brand-ads/README.md) — Athletic wear and editorial fashion ad workflows
-- [`/cinematic`](../cinematic/README.md) — Film-technical cinematic prompt approach
-- [`/audit-pipeline`](../audit-pipeline/README.md) — Full multi-model audit documentation
+**1. Prompt the aspiration, not the product**
+Wrong: "Show a person wearing a blue jacket"
+Right: "A figure at the summit of a mountain at first light, jacket catching the wind, the entire valley below them — they earned this"
+
+**2. Sound design is not optional**
+Even in a 5-second brand clip, the presence or absence of diegetic ambient sound determines whether it feels real or fake. Always specify.
+
+**3. Quality bar**
+Every asset goes through the full audit pipeline before delivery. Brand content that looks like AI is brand content that fails. The goal is always: indistinguishable from a $500K production shoot.
+
+---
+
+## Audit Checklist for Brand Assets
+
+- [ ] Does this feel aspirational or just descriptive?
+- [ ] Is the product/lifestyle the hero or a prop?
+- [ ] Would this pass as a frame from a real campaign?
+- [ ] Does the sound design match the visual tone?
+- [ ] Has this been through hostile audit in a separate model?
