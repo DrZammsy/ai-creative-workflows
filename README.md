@@ -4,6 +4,7 @@
 
 📍 Honolulu, HI (Remote Available)
 📧 rolfburton@gmail.com
+📱 808-220-8441
 📝 [Waves and Positions — Substack](https://wavesandpositions.substack.com)
 🐦 [X / Twitter](https://x.com/waves4positions)
 💼 [LinkedIn](https://www.linkedin.com/in/rolf-burton-kvalvik-b37bb9212)
@@ -22,12 +23,12 @@ I produced approximately **3,000 AI-generated videos using Sora 2** over two mon
 
 ## What's In This Repository
 
-| Folder | Contents |
-|--------|----------|
-| [`/prompt-frameworks`](./prompt-frameworks) | My core replicable prompt systems |
-| [`/brand-ads`](./brand-ads) | Prompt workflows for AI-generated advertising content |
-| [`/cinematic`](./cinematic) | Film-technical prompt approach using Panavision and lighting packages |
-| [`/audit-pipeline`](./audit-pipeline) | My multi-model quality control workflow |
+| File | Contents |
+|------|----------|
+| [prompt-frameworks.md](https://github.com/DrZammsy/ai-creative-workflows/blob/main/prompt-frameworks.md) | My core replicable prompt systems |
+| [brand-ads.md](https://github.com/DrZammsy/ai-creative-workflows/blob/main/brand-ads.md) | Prompt workflows for AI-generated advertising content |
+| [cinematic.md](https://github.com/DrZammsy/ai-creative-workflows/blob/main/cinematic.md) | Film-technical prompt approach using Panavision and lighting packages |
+| [audit-pipeline.md](https://github.com/DrZammsy/ai-creative-workflows/blob/main/audit-pipeline.md) | My multi-model quality control workflow |
 
 ---
 
@@ -46,6 +47,6 @@ I produced approximately **3,000 AI-generated videos using Sora 2** over two mon
 
 ## The Chronicles of Dr. Zammsy
 
-Co-creator of an original Victorian sci-fi fantasy IP franchise with **Rick McCallum** (Producer: Star Wars Episodes I–III) attached and **Matt Gaser** (Star Wars: The Clone Wars, World of Warcraft) as lead visual developer. NFT collection sold out 2021 ($400K). Puzzle game ($500K). Full film, games, and merchandise pipeline in development.
+Co-creator of an original Victorian sci-fi fantasy IP franchise with **Rick McCallum** (Producer: Star Wars Episodes I–III) attached and **Matt Gaser** (Star Wars: The Clone Wars, World of Warcraft) as lead visual developer. $400K generated via sold-out NFT collection and puzzle game. Full film, games, and merchandise pipeline in development.
 
 [Learn more →](https://wavesandpositions.substack.com)
