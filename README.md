@@ -1,88 +1,71 @@
-# Cinematic Prompt Framework
+# Multi-Model Audit Pipeline
 
-## The Core Principle
+## Overview
 
-**Prompt like a cinematographer, not like a consumer.**
+This is the quality control system I use for all AI-generated creative content. It is modeled on professional film production workflows where multiple independent reviewers — the director, the DP, the editor — each evaluate the same material from different perspectives before anything is locked.
 
-The difference between AI content that looks professional and AI content that looks fake is almost always traceable to the prompt. Consumer prompts describe what they want to see. Cinematographer prompts describe how it was shot.
-
----
-
-## Panavision Primer
-
-Panavision primes are the gold standard of Hollywood cinema lenses. Specifying them in a prompt signals to the model the rendering quality, bokeh character, and optical personality you're targeting.
-
-### Lens Choices and Their Visual Personality
-
-| Lens | Character | Best For |
-|------|-----------|----------|
-| Panavision Primo 21mm | Wide, environmental, slight distortion at edges | Establishing shots, landscapes, scale |
-| Panavision Primo 35mm | Natural human perspective, slightly wide | Two-shots, environmental portraits |
-| Panavision Primo 50mm | Closest to human eye, neutral | Hero shots, product, editorial |
-| Panavision Primo 75mm | Light compression, flattering | Close portraits, intimate scenes |
-| Panavision Primo 150mm | Heavy compression, isolated subject | Hero isolation, telephoto drama |
-| Panavision Anamorphic | Horizontal lens flares, oval bokeh, 2.39:1 | Epic cinematic, sci-fi, period drama |
+The core insight: **a single model cannot objectively audit its own output.** You need separation.
 
 ---
 
-## Lighting Packages
+## The Pipeline
 
-### Natural Light
 ```
-Golden hour backlight, warm 5600K ambient fill, long shadows, 
-atmospheric haze in background, motivated by sun position
+BRIEF → DRAFT PROMPT → PRE-AUDIT → REVISIONS → DEEP THINK RUN → OUTPUT AUDIT → HOSTILE AUDIT → DELIVERY
 ```
 
-### Three-Point Studio
+### Stage 1 — Draft Prompt
+Write the initial prompt from the creative brief using the cinematography framework. Do not run it yet.
+
+### Stage 2 — Pre-Audit
+Review the draft prompt against the cinematography checklist:
+- Lens specified?
+- Lighting package defined?
+- Camera movement noted?
+- Diegetic sound considered?
+- Emotional tone clear?
+
+Revise until all boxes are checked.
+
+### Stage 3 — Deep Thinking Pro Model Run
+Process the finalized prompt through **ChatGPT Pro** or **Claude** with extended/deep thinking enabled. These models are used for their reasoning depth — they catch logical inconsistencies in the prompt that a quick model misses.
+
+### Stage 4 — Output Audit
+When the asset is produced, immediately review against:
+- Does it match the brief?
+- Is the quality bar professional or amateur?
+- Does the sound design (if applicable) match the visual tone?
+- Would this pass as real production content?
+
+If it fails any check, return to Stage 2 with specific revision notes.
+
+### Stage 5 — Hostile Audit
+Run the approved output through a **completely separate AI model** with the following prompt:
+
 ```
-Key light camera left 45 degrees, soft fill right at half intensity, 
-hair light from above rear creating separation from background, 
-clean shadow on far cheek
+You are a hostile creative director reviewing this asset for a major brand campaign. 
+Your job is to find every flaw, every amateur tell, every reason a client would reject this. 
+Be merciless. Do not look for what works — find what fails.
 ```
 
-### Noir / Dramatic
-```
-Single hard source motivated by practical window, deep shadows, 
-high contrast ratio 8:1, rim light only on edges, 
-background falls to black
-```
-
-### Overcast / Diffused
-```
-Soft wraparound light, minimal shadows, even skin tone rendering, 
-slight cool bias 6500K, fashion editorial quality
-```
+Only assets that survive the hostile audit move to delivery.
 
 ---
 
-## Sound Design in Visual Prompts
+## Why This Works
 
-Sound is the most overlooked element in AI content — and the most defining factor in whether something feels professional or amateur.
+Most AI creative content fails because the person producing it is too close to it. They see what they intended, not what was produced. The hostile audit forces an adversarial perspective that surfaces problems invisible to the original creator.
 
-### Diegetic Sound (exists within the scene world)
-Always specify what sounds would naturally exist in the environment:
-- Urban exterior: traffic, wind, distant voices
-- Nature: wind, water, bird calls, footsteps on ground material
-- Interior: room tone, HVAC hum, material textures
-
-### Non-Diegetic Sound (score, music, narration)
-Specify the emotional register of the music layer:
-- Driving orchestral — action, movement, urgency
-- Sparse piano — intimacy, reflection, melancholy  
-- Electronic pulse — technology, future, tension
-- Silence — product hero shots, high fashion, luxury
+This system was developed from 20+ years of professional film production experience where the cost of getting it wrong on set is measured in hundreds of thousands of dollars per day. The discipline transfers directly to AI content production.
 
 ---
 
-## Full Example: Cinematic Brand Narrative
+## Tools Used
 
-```
-Panavision Anamorphic 40mm, female lead mid-30s walking through 
-early morning Tokyo street market, golden hour side light cutting 
-through steam from food stalls, warm amber and cool blue contrast, 
-shallow depth of field with foreground bokeh elements, 
-2.39:1 crop with anamorphic horizontal lens flare catching lens at frame edge,
-diegetic: market ambient, footsteps on wet stone, distant vendor calls,
-non-diegetic: sparse melancholic piano motif,
-mood: solitary beauty, quiet determination, the city as backdrop not subject
-```
+| Stage | Tool |
+|-------|------|
+| Draft & Pre-Audit | Claude |
+| Deep Think Run | ChatGPT Pro (o1/o3) or Claude |
+| Generation | Sora 2 |
+| Hostile Audit | Separate Claude or ChatGPT instance with fresh context |
+| Final Edit | Adobe Premiere Pro |
