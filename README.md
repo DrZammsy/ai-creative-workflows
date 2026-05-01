@@ -5,7 +5,8 @@
 📍 Honolulu, HI (Remote Available)
 📧 rolfburton@gmail.com
 📝 [Waves and Positions — Substack](https://wavesandpositions.substack.com)
-🐦 [X / Twitter](https://x.com/waves4p)
+🐦 [X / Twitter](https://x.com/waves4positions)
+💼 [LinkedIn](https://www.linkedin.com/in/rolf-burton-kvalvik-b37bb9212)
 
 ---
 
